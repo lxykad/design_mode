@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mode.design.lxy.com.designmode.MainActivity">
+
+    <Button
+        android:id="@+id/bt_duty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goResponsibility"
+        android:text="责任链模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_build"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goBuild"
+        android:text="建造者模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_duty" />
+
+    <Button
+        android:id="@+id/bt_prototype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goPrototype"
+        android:text="原型设计模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_build" />
+
+    <Button
+        android:id="@+id/bt_factory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goFactory"
+        android:text="工厂方法模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_prototype" />
+
+    <Button
+        android:id="@+id/bt_observer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goObserver"
+        android:text="观察者模式"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_factory" />
+
+</android.support.constraint.ConstraintLayout>
